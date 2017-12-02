@@ -2,6 +2,7 @@
 #define GRADEBOOK_H
 
 #include <QMainWindow>
+#include <QObject>
 
 namespace Ui {
 class gradebook;
