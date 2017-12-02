@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>704</width>
-    <height>525</height>
+    <height>619</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -79,7 +79,7 @@
      <string>Scheme B</string>
     </property>
    </widget>
-   <widget class="QWidget" name="">
+   <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
       <x>450</x>
@@ -142,13 +142,13 @@
      </item>
     </layout>
    </widget>
-   <widget class="QWidget" name="">
+   <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
       <x>20</x>
       <y>70</y>
       <width>401</width>
-      <height>401</height>
+      <height>411</height>
      </rect>
     </property>
     <layout class="QVBoxLayout" name="verticalLayout">
@@ -342,6 +342,42 @@
      </item>
     </layout>
    </widget>
+   <widget class="QComboBox" name="comboBox">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>30</y>
+      <width>251</width>
+      <height>24</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_2">
+    <property name="geometry">
+     <rect>
+      <x>559</x>
+      <y>460</y>
+      <width>111</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>See Result</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_13">
+    <property name="geometry">
+     <rect>
+      <x>620</x>
+      <y>440</y>
+      <width>60</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menuBar">
    <property name="geometry">
@@ -355,6 +391,34 @@
   </widget>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
+ <tabstops>
+  <tabstop>comboBox</tabstop>
+  <tabstop>spinBox_1</tabstop>
+  <tabstop>spinBox_2</tabstop>
+  <tabstop>spinBox_3</tabstop>
+  <tabstop>spinBox_4</tabstop>
+  <tabstop>spinBox_5</tabstop>
+  <tabstop>spinBox_6</tabstop>
+  <tabstop>spinBox_7</tabstop>
+  <tabstop>spinBox_8</tabstop>
+  <tabstop>horizontalSlider_9</tabstop>
+  <tabstop>horizontalSlider_10</tabstop>
+  <tabstop>horizontalSlider_11</tabstop>
+  <tabstop>radioButton</tabstop>
+  <tabstop>radioButton_2</tabstop>
+  <tabstop>horizontalSlider_1</tabstop>
+  <tabstop>horizontalSlider_4</tabstop>
+  <tabstop>spinBox_9</tabstop>
+  <tabstop>horizontalSlider_5</tabstop>
+  <tabstop>horizontalSlider_3</tabstop>
+  <tabstop>horizontalSlider_6</tabstop>
+  <tabstop>spinBox_10</tabstop>
+  <tabstop>horizontalSlider_7</tabstop>
+  <tabstop>horizontalSlider_2</tabstop>
+  <tabstop>horizontalSlider_8</tabstop>
+  <tabstop>spinBox_11</tabstop>
+  <tabstop>pushButton</tabstop>
+ </tabstops>
  <resources/>
  <connections>
   <connection>
@@ -364,8 +428,8 @@
    <slot>close()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>439</x>
-     <y>425</y>
+     <x>620</x>
+     <y>48</y>
     </hint>
     <hint type="destinationlabel">
      <x>359</x>
