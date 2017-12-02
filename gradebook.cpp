@@ -140,15 +140,18 @@ gradebook::gradebook(QWidget *parent) :
                          this,SLOT(update_overall(int)));
 
 
+    ui->radioButton->setChecked(1);
+     ui->radioButton_2->setChecked(0);
+
     //I dont know how to do thisssssssssssssssssssss
-/*
+
     //calculate result by different schemes
     QObject::connect(ui->radioButton,SIGNAL(pressed()), //don't know what to do with it  tried Clicked(); isChecked(); QObject::sender()
                          this,SLOT(update_overall(int)));
 
     QObject::connect(ui->radioButton_2,SIGNAL(pressed()),
                          this,SLOT(update_overall(int)));
-*/
+/**/
 
 }
 
