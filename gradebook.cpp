@@ -178,9 +178,19 @@ void gradebook::update_overall(int unused){
 
     int hw_sum = 0;
     hw_sum = ui->spinBox_1->value() + ui->spinBox_2->value() + ui->spinBox_3->value() + ui->spinBox_4->value() + ui->spinBox_5->value() + ui->spinBox_6->value() + ui->spinBox_7->value() + ui->spinBox_8->value();
-    //+ ui->spinBox_9->value() + ui->spinBox_10->value() + ui->spinBox_11->value()
+    int hw_min1,hw_min2,hw_min;
+    hw_min1 = std::min(ui->spinBox_1->value(), ui->spinBox_2->value());
+    hw_min2 = std::min(ui->spinBox_3->value(), ui->spinBox_4->value());
+    hw_min = std::min(hw_min1, hw_min2);
+    hw_min1 = std::min(ui->spinBox_5->value(), ui->spinBox_6->value());
+    hw_min2 = std::min(ui->spinBox_7->value(), ui->spinBox_8->value());
+    hw_min = std::min(hw_min, hw_min1);
+    hw_min = std::min(hw_min, hw_min2);
+
+    hw_sum = hw_sum - hw_min;
+
     double score = 0;
-    score += hw_sum/800.0*25;
+    score += hw_sum/700.0*25;
 
  if (ui->radioButton->isChecked())
         score += (ui->spinBox_9->value() + ui->spinBox_10->value()) /200.0*40.0 +ui->spinBox_11->value()/100.0 *35.0;
